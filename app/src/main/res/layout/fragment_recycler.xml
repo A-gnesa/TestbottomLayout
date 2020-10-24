@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/Line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/first_fun"
+            android:text="一号功能"
+            style="@style/function_button_style"
+            />
+
+        <Button
+            android:id="@+id/sencond_fun"
+            android:text="二号功能"
+            style="@style/function_button_style"/>
+
+        <Button
+            android:id="@+id/thrid_fun"
+            android:text="三号功能"
+            style="@style/function_button_style" />
+
+        <Button
+            android:id="@+id/fourth_fun"
+            android:text="四号功能"
+            style="@style/function_button_style" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Line" />
+</RelativeLayout>
