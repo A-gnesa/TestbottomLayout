@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--  标题栏  -->
+<include layout="@layout/titlebar"/>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+<!--    底部RadioGroup    -->
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:orientation="horizontal"
+        android:background="#DDDDDD"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/homepage"
+            android:text="主页"
+            android:drawableTop="@drawable/radiobutton_homepage_drawable_selector"
+            style="@style/radiobutton_style"
+           >
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/message"
+            android:text="消息"
+            android:drawableTop="@drawable/radiobutton_homepage_drawable_selector"
+            style="@style/radiobutton_style">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/mine"
+            android:text="我的"
+            android:drawableTop="@drawable/radiobutton_homepage_drawable_selector"
+            style="@style/radiobutton_style"
+            >
+        </RadioButton>
+</RadioGroup>
+</LinearLayout>
