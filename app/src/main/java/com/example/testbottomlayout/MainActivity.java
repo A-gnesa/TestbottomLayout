@@ -1,8 +1,6 @@
 package com.example.testbottomlayout;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.RadioGroup;
 
 import androidx.annotation.Nullable;
@@ -87,7 +85,6 @@ public class MainActivity extends FragmentActivity {
     }
     private void initFragment() {
         mfragment = new ArrayList<>();
-
         mfragment.add(new HomepageFragment());
         mfragment.add(new MessageFragment());
         mfragment.add(new MineFragment());

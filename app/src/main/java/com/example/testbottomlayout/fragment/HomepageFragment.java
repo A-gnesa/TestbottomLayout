@@ -19,7 +19,6 @@ import com.example.testbottomlayout.base.BaseFragment;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.zip.Inflater;
 
 /**
  * @author: Aori
@@ -36,6 +35,10 @@ public class HomepageFragment extends BaseFragment {
         Log.e(TAG,"Fragment界面被初始化了");
         View view = View.inflate(mcontext, R.layout.fragment_recycler,null);
         recyclerView = view.findViewById(R.id.Recycler);
+        list = new ArrayList<>();
+        for (int i = 1; i <= 20; i++) {
+            list.add(i);
+        }
         //设置线性布局
         LinearLayoutManager linearLayout = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(linearLayout);
@@ -48,10 +51,6 @@ public class HomepageFragment extends BaseFragment {
     @Override
     protected void initData() {
         super.initData();
-        list = new ArrayList<>();
-        for (int i = 1; i <= 20; i++) {
-            list.add(i);
-        }
         Log.e(TAG,"Fragment数据被初始化了");
     }
 }

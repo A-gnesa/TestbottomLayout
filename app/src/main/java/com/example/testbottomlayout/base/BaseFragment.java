@@ -43,6 +43,7 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        initData();
     }
 
     //  当子类需要初始化数据时，可以重写该方法
