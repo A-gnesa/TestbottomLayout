@@ -25,11 +25,11 @@ public class LauncherActivity extends Activity {
             public void run() {
                 startMainActivity();
             }
-        },2000);
+        },1000);
     }
 
     private void startMainActivity() {
-        Intent intent = new Intent(this,MainActivity.class);
+        Intent intent = new Intent(this,LoginActivity.class);
         startActivity(intent);
 //        关闭当前页面
         finish();

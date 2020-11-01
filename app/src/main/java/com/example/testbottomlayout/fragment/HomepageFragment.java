@@ -6,7 +6,9 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,6 +19,9 @@ import com.example.testbottomlayout.R;
 import com.example.testbottomlayout.RecyclerViewAdapter;
 import com.example.testbottomlayout.base.BaseFragment;
 
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,8 +35,10 @@ public class HomepageFragment extends BaseFragment {
     private static final String TAG = HomepageFragment.class.getSimpleName();
     List<Integer> list;
     RecyclerView recyclerView;
+    Button button;
     @Override
     protected View initView() {
+
         Log.e(TAG,"Fragment界面被初始化了");
         View view = View.inflate(mcontext, R.layout.fragment_recycler,null);
         recyclerView = view.findViewById(R.id.Recycler);

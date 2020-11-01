@@ -3,6 +3,7 @@ package com.example.testbottomlayout.fragment;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.testbottomlayout.base.BaseFragment;
