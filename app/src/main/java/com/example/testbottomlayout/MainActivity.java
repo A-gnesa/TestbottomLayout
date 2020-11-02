@@ -45,7 +45,6 @@ public class MainActivity extends FragmentActivity {
         initFragment();
 //        实现RadioButton的监听
         setListener();
-        Connect();
     }
 
     private void setListener() {
@@ -137,29 +136,14 @@ public class MainActivity extends FragmentActivity {
 //            e.printStackTrace();
 //        }
 //    }
-        public void Connect(){
-//            String url = "http://127.0.0.1:8000/demo2";
-            String url = "https://www.baidu.com/";
-            OkHttpClient okHttpClient = new OkHttpClient();
-            MediaType mediaType = MediaType.parse("text/x-markdown; charset=utf-8");
-            String requestBody = "I am Jdqm.";
-            RequestBody body = RequestBody.create(mediaType, requestBody);
-            final Request request = new Request.Builder()
-                    .url(url)
-                    .post(body)
-                    .build();
-            final Call call = okHttpClient.newCall(request);
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    try {
-                        Response response = call.execute();
-                        String TAG="OKHTTP";
-                        Log.d(TAG, "run: " + response.body().string());
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }).start();
-        }
+    @Override
+    public void onBackPressed() {
+        /**
+         * @description 设置不可返回为登录界面
+         * @param void
+         * @return void
+         * @author Aori
+         * @time 2020/11/1 22:44
+         */
+    }
 }
