@@ -37,7 +37,7 @@ public class CheckUser implements Callable {
 //        校园网
         url = "http://10.206.150.208:8000/demo2/"+operation+"/";
 //        手机热点
-//        url = " http://172.20.10.2:8000/demo2/";
+//        url = " http://172.20.10.2:8000/demo2/"+operation+"/";
         OkHttpClient okHttpClient = new OkHttpClient();
         MediaType mediaType = MediaType.parse("application/json; charset=utf-8");
         JSONObject json;

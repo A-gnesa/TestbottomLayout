@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerVertical="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     >
 
     <Button
@@ -22,40 +24,39 @@
         tools:layout_constraintTop_creator="1" />
 
     <EditText
-        android:id="@+id/editText_registered_User"
+        android:id="@+id/editText_Registered_password"
         android:layout_width="240dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="35dp"
-        android:layout_marginEnd="68dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginStart="68dp"
-        android:ems="10"
-        android:hint="username"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editText_password"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintLeft_toLeftOf="@+id/editText_password"
-        app:layout_constraintRight_toRightOf="@+id/editText_password"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_editor_absoluteX="-15dp"
-        tools:layout_editor_absoluteY="152dp" />
-
-    <EditText
-        android:id="@+id/editText_registered_password"
-        android:layout_width="240dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="69dp"
-        android:layout_marginEnd="69dp"
         android:ems="10"
         android:hint="password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="@+id/button_login"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="@+id/editText_registered_User"
+        app:layout_constraintRight_toRightOf="@+id/editText_registered_User"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <EditText
+        android:id="@+id/editText_registered_User"
+        android:singleLine="true"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="69dp"
+        android:ems="10"
+        android:hint="Username"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.379" />
 
     <EditText
         android:id="@+id/editText_repeat_password"
@@ -68,7 +69,7 @@
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="@+id/Registered"
+        app:layout_constraintLeft_toLeftOf="@+id/Button_Registered"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.615" />
@@ -88,17 +89,13 @@
         android:id="@+id/textView2"
         android:layout_width="250dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="50dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:autoText="false"
+        android:layout_marginBottom="124dp"
         android:text="Registered"
         android:textAlignment="center"
         android:textSize="50sp"
         android:textStyle="bold"
-
-        app:layout_constraintBottom_toTopOf="@+id/editText_User"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintLeft_toLeftOf="@+id/editText_User"
-        app:layout_constraintRight_toRightOf="@+id/editText_User" />
+        app:layout_constraintBottom_toTopOf="@+id/editText_Registered_password"
+        app:layout_constraintLeft_toLeftOf="@+id/editText_Registered_password"
+        app:layout_constraintRight_toRightOf="@+id/editText_Registered_password" />
 </androidx.constraintlayout.widget.ConstraintLayout>

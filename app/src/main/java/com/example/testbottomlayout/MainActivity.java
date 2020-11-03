@@ -13,19 +13,8 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.testbottomlayout.base.BaseFragment;
 import com.example.testbottomlayout.fragment.*;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.Socket;
 import java.util.ArrayList;
 
-import okhttp3.Call;
-import okhttp3.MediaType;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
-import okhttp3.ResponseBody;
 
 public class MainActivity extends FragmentActivity {
 //    根据position定位Fragment
@@ -48,29 +37,26 @@ public class MainActivity extends FragmentActivity {
     }
 
     private void setListener() {
-        mRg_main.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                switch (checkedId){
-                    case R.id.homepage:
-                        position = 0;
-                        break;
-                    case R.id.message:
-                        position = 1;
-                        break;
-                    case R.id.mine:
-                        position = 2;
-                        break;
-                    default:
-                        position = 0;
-                        break;
+        mRg_main.setOnCheckedChangeListener((group, checkedId) -> {
+            switch (checkedId){
+                case R.id.homepage:
+                    position = 0;
+                    break;
+                case R.id.message:
+                    position = 1;
+                    break;
+                case R.id.mine:
+                    position = 2;
+                    break;
+                default:
+                    position = 0;
+                    break;
 
-                }
-                //        根据位置得到Fragment
-                BaseFragment fragment = getFragment(position);
-                //        替换
-                switchContent(mContent,fragment);
             }
+            //        根据位置得到Fragment
+            BaseFragment fragment = getFragment(position);
+            //        替换
+            switchContent(mContent,fragment);
         });
     }
 //根据position创建Fragment

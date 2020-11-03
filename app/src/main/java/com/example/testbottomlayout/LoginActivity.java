@@ -1,8 +1,10 @@
 package com.example.testbottomlayout;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -46,6 +48,7 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.activity_login);
         init_view();
         verification_login();
+        Registered_event();
     }
 
     public void init_view() {
@@ -64,45 +67,56 @@ public class LoginActivity extends Activity {
          * @author Aori
          * @time 2020/11/1 21:19
          */
-        button_login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    String user = editText_User.getText().toString();
-                    String password = editText_Password.getText().toString();
-                    FutureTask futureTask =new FutureTask(new CheckUser(user,password,"login"));
-                    new Thread(futureTask).start();
+        SharedPreferences UserSp = this.getSharedPreferences("UserSp", Context.MODE_PRIVATE);
+        System.out.println(UserSp);
+        if (UserSp!=null&&UserSp.getBoolean("login",false)){
+            editText_User.setText(UserSp.getString("user","12"));
+            editText_Password.setText(UserSp.getString("password","12"));
+        }
 
-                    if (futureTask.get().equals("login1")){
-                        Intent intent = new Intent(LoginActivity.this,MainActivity.class);
-                        startActivity(intent);
-                    }if (futureTask.get().equals("login0")){
-                        new  AlertDialog.Builder(LoginActivity.this)
-                                .setTitle("请输入" )
-                                .setIcon(android.R.drawable.ic_dialog_info)
-                                .setMessage("账号密码错误")
-                                .setPositiveButton("注册账号", new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        Intent intent = new Intent(LoginActivity.this,RegisteredActivity.class);
-                                        startActivity(intent);
-                                    }
-                                })
-                                .setNegativeButton("取消" ,  null )
-                                .setNeutralButton("忘记密码",null)
-                                .show();
-                    }
+        button_login.setOnClickListener(v -> {
+            try {
+                String user = editText_User.getText().toString();
+                String password = editText_Password.getText().toString();
 
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } catch (ExecutionException e) {
-                    e.printStackTrace();
+
+//                自己写的工具类用来获取服务器连接
+                FutureTask futureTask =new FutureTask(new CheckUser(user,password,"login"));
+                new Thread(futureTask).start();
+//              根据服务器的返回参数判断登录是否成功
+                if (futureTask.get().equals("login1")){
+                        SharedPreferences.Editor editor = UserSp.edit();
+                        editor.putString("user",user);
+                        editor.putString("password",password);
+                        editor.putBoolean("login",true);
+                        editor.apply();
+                    Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                    startActivity(intent);
+                }if (futureTask.get().equals("login0")){
+                    new  AlertDialog.Builder(LoginActivity.this)
+                            .setTitle("登录失败！" )
+                            .setIcon(android.R.drawable.ic_dialog_info)
+                            .setMessage("账号密码错误")
+                            .setPositiveButton("注册账号", (dialog, which) -> {
+                                Intent intent = new Intent(LoginActivity.this,RegisteredActivity.class);
+                                startActivity(intent);
+                            })
+                            .setNegativeButton("取消" ,  null )
+                            .setNeutralButton("忘记密码",null)
+                            .show();
                 }
-//                if (user.equals(password)){
-//                    Intent intent = new Intent(LoginActivity.this,MainActivity.class);
-//                    startActivity(intent);
-//                }
+
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
             }
+        });
+    }
+    public void Registered_event(){
+        button_register.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginActivity.this,RegisteredActivity.class);
+            startActivity(intent);
         });
     }
 }
