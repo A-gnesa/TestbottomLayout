@@ -17,8 +17,20 @@ import okhttp3.Response;
  * @describe:
  */
 public class SendIM implements Callable {
+
+
+    String username;
+
+    public SendIM(String username) {
+        this.username = username;
+    }
+
     @Override
     public Object call() throws Exception {
+
+
+
+
         String appKey = "01f8d0476d3c8f94e95a87ab2063e89d";
         String appSecret = "9d10f78694d8";
         String nonce = "12345";
@@ -32,7 +44,7 @@ public class SendIM implements Callable {
         OkHttpClient okHttpClient = new OkHttpClient();
         String url = "https://api.netease.im/nimserver/user/create.action";
 //        String url = "http://10.206.150.208:8000/demo2/test/";
-        FormBody formBody = new FormBody.Builder().add("accid", "helloworld").build();
+        FormBody formBody = new FormBody.Builder().add("accid", username).build();
         final Request request = new Request.Builder()
                 .url(url)
                 .post(formBody)

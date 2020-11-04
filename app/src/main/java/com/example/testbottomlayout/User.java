@@ -8,6 +8,9 @@ package com.example.testbottomlayout;
 public class User {
     private String user;
     private String password;
+    private String accid;
+    private String token;
+
 
     public String getUser() {
         return user;
@@ -24,5 +27,24 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+
+    public String getAccid() {
+        return accid;
+    }
+
+    public void setAccid(String accid) {
+        this.accid = accid;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+
 
 }
