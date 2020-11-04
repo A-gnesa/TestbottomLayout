@@ -1,27 +1,16 @@
 package com.example.testbottomlayout.fragment;
 
-import android.os.Bundle;
 import android.util.Log;
-import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.testbottomlayout.R;
-import com.example.testbottomlayout.RecyclerViewAdapter;
+import com.example.testbottomlayout.recycleView.RecyclerViewAdapter;
 import com.example.testbottomlayout.base.BaseFragment;
 
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 

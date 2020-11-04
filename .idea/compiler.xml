@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <excludeFromCompile>
-      <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/testbottomlayout/MainActivity.java" />
+      <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/testbottomlayout/Activity/MainActivity.java" />
     </excludeFromCompile>
   </component>
 </project>
