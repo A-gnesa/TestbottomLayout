@@ -23,6 +23,17 @@ import okhttp3.Response;
 public class CheckUser implements Callable {
     private String username;
     private String password;
+    private String accid;
+    private String token;
+
+    public CheckUser(String username, String password, String accid, String token, String operation) {
+        this.username = username;
+        this.password = password;
+        this.accid = accid;
+        this.token = token;
+        this.operation = operation;
+    }
+
     private String operation;
 
     public CheckUser(String username, String password, String operation) {
@@ -38,12 +49,18 @@ public class CheckUser implements Callable {
         url = "http://10.206.150.208:8000/demo2/"+operation+"/";
 //        手机热点
 //        url = " http://172.20.10.2:8000/demo2/"+operation+"/";
+
+
         OkHttpClient okHttpClient = new OkHttpClient();
         MediaType mediaType = MediaType.parse("application/json; charset=utf-8");
         JSONObject json;
         json = new JSONObject();
         json.put("User", username);
         json.put("password", password);
+        if (operation.equals("registered")){
+            json.put("accid",accid);
+            json.put("token",token);
+       }
         RequestBody body = RequestBody.create(mediaType, String.valueOf(json));
         final Request request = new Request.Builder()
                 .url(url)
