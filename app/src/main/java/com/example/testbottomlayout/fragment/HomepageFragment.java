@@ -1,5 +1,6 @@
 package com.example.testbottomlayout.fragment;
 
+import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -7,6 +8,8 @@ import android.widget.Button;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.testbottomlayout.Activity.MainActivity;
+import com.example.testbottomlayout.Activity.P2PActivity;
 import com.example.testbottomlayout.R;
 import com.example.testbottomlayout.recycleView.RecyclerViewAdapter;
 import com.example.testbottomlayout.base.BaseFragment;
@@ -24,10 +27,9 @@ public class HomepageFragment extends BaseFragment {
     private static final String TAG = HomepageFragment.class.getSimpleName();
     List<Integer> list;
     RecyclerView recyclerView;
-    Button button;
+    Button firstfun_button;
     @Override
     protected View initView() {
-
         Log.e(TAG,"Fragment界面被初始化了");
         View view = View.inflate(mcontext, R.layout.fragment_recycler,null);
         recyclerView = view.findViewById(R.id.Recycler);
@@ -41,6 +43,14 @@ public class HomepageFragment extends BaseFragment {
         //设置适配器
         RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(getActivity(), list);
         recyclerView.setAdapter(recyclerViewAdapter);
+
+        firstfun_button = view.findViewById(R.id.first_fun);
+        firstfun_button.setOnClickListener(v -> {
+            Log.e("button","被点击了");
+            Intent intent = new Intent(getActivity(), P2PActivity.class);
+            startActivity(intent);
+        });
+
         return view;
     }
 

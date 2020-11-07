@@ -51,7 +51,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning"
         android:name=".Application.MyApplication">
-
+        <activity android:name=".Activity.P2PActivity" />
         <activity android:name=".Activity.MainActivity" />
         <activity android:name=".Activity.LoginActivity" />
         <activity android:name=".Activity.RegisteredActivity" />

@@ -11,23 +11,24 @@
 
         <Button
             android:id="@+id/first_fun"
+            android:text="一号功能"
             style="@style/function_button_style"
-            android:text="心理量表" />
+            />
 
         <Button
             android:id="@+id/sencond_fun"
-            style="@style/function_button_style"
-            android:text="在线预约" />
+            android:text="二号功能"
+            style="@style/function_button_style"/>
 
         <Button
             android:id="@+id/thrid_fun"
-            style="@style/function_button_style"
-            android:text="在线咨询" />
+            android:text="三号功能"
+            style="@style/function_button_style" />
 
         <Button
             android:id="@+id/fourth_fun"
-            style="@style/function_button_style"
-            android:text="讨论社区" />
+            android:text="四号功能"
+            style="@style/function_button_style" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

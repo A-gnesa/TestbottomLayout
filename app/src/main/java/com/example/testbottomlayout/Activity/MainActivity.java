@@ -1,7 +1,11 @@
 package com.example.testbottomlayout.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.Button;
 import android.widget.RadioGroup;
 
 import androidx.annotation.Nullable;
@@ -26,6 +30,9 @@ public class MainActivity extends FragmentActivity {
     private Fragment mContent;
     private ArrayList<BaseFragment> mfragment;
 
+
+
+    private Button firstfun_button;
     private RadioGroup mRg_main;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -34,10 +41,11 @@ public class MainActivity extends FragmentActivity {
         initView();
         initFragment();
 //        实现RadioButton的监听
-        setListener();
+        setRadioButtonListener();
     }
 
-    private void setListener() {
+
+    private void setRadioButtonListener() {
         mRg_main.setOnCheckedChangeListener((group, checkedId) -> {
             switch (checkedId){
                 case R.id.homepage:
