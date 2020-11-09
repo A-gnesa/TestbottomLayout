@@ -15,7 +15,6 @@ import androidx.appcompat.app.AlertDialog;
 import com.example.testbottomlayout.R;
 import com.example.testbottomlayout.Tool_class.CheckUser;
 import com.example.testbottomlayout.Tool_class.SendIM;
-import com.example.testbottomlayout.User;
 import com.netease.nimlib.sdk.NIMClient;
 import com.netease.nimlib.sdk.RequestCallback;
 import com.netease.nimlib.sdk.auth.AuthService;
@@ -37,7 +36,6 @@ public class LoginActivity extends Activity {
     private EditText editText_Password;
     private Button button_login;
     private Button button_register;
-    private User user;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

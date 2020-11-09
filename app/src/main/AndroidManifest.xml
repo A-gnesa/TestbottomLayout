@@ -55,6 +55,7 @@
         <activity android:name=".Activity.MainActivity" />
         <activity android:name=".Activity.LoginActivity" />
         <activity android:name=".Activity.RegisteredActivity" />
+        <activity android:name=".Activity.SCLActivity" />
         <activity android:name=".Activity.LauncherActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/titlebar"
+        android:id="@+id/SCL_titlebar"
+        />
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/SCL_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SCL_titlebar"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:id="@+id/SCL_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="387dp"
+        android:layout_marginBottom="45dp"
+        android:padding="10dp"
+        android:text="提交" />
+</RelativeLayout>

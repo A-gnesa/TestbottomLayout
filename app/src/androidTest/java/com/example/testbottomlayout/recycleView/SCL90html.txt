@@ -1,0 +1,1074 @@
+
+
+<html>
+<head>
+	<meta HTTP-EQUIV="Content-Type" Content="text-html; charset=UTF-8">
+	<title>症状自评量表 SCL-90 在线测试</title>
+	<script src="../js/jquery-1.4.min.js" type="text/javascript"></script>
+
+	<script language="javascript">
+		function getRadioValue(name){
+			var oR=$("input[name='"+name+"']");
+			for(var j=0;j<oR.length;j++)
+				if(oR[j].checked)
+					return oR[j].value;
+			return undefined;
+			}
+		function pageSubmit(){
+			for(var i=1;i<91;i++)
+				if(!getRadioValue("rdoSCL90_"+i)){
+					alert("请回答所有的问题后再提交");
+					return 0;
+					}
+			$("#f1").submit();
+			}
+	</script>
+<style>
+	#divAll {
+		text-align:center;
+		border:0px solid #000;
+	}
+	#divContent{
+		margin:0 auto;
+		text-align:left;
+		width:760px;
+		border:1px solid #999;
+		padding:10px 5px;
+	}
+	#divContent span{
+		line-height:30px;
+	}
+	div.title{
+		font-size:25px;
+		font-weight:bold;
+		margin:0 auto;
+		text-align:center;
+		padding:20px 0;
+	}
+	hr,fieldset{
+		border:1px solid #999;
+	}
+</style>
+</head>
+
+<body>
+<div id="divAll">
+	<div id="divContent">
+	<div class="title">症状自评量表SCL-90</div>
+	<fieldset>
+	<legend>说明</legend>
+	《症状自评量表 SCL-90》是世界上最著名的心理健康测试量表之一，是当前使用最为广泛的精神障碍和心理疾病门诊检查量表，将协助您从十个方面来了解自己的心理健康程度。
+	本测验适用对象为16岁以上的用户。请根据最近一星期内的状况，回答下列问题：<span style="color:#f00;">（请在专科医师的指导下使用此量表）</span>
+	</fieldset>
+	<form action="scl90.sub.asp" method="post" id="f1" target="_blank">
+
+	<hr>
+	<div>1.头痛</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_1" value="1" id="rdoSCL90_1_1"><label for="rdoSCL90_1_1">从无、</label>
+		<input type="radio" name="rdoSCL90_1" value="2" id="rdoSCL90_1_2"><label for="rdoSCL90_1_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_1" value="3" id="rdoSCL90_1_3"><label for="rdoSCL90_1_3">中等、</label>
+		<input type="radio" name="rdoSCL90_1" value="4" id="rdoSCL90_1_4"><label for="rdoSCL90_1_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_1" value="5" id="rdoSCL90_1_5"><label for="rdoSCL90_1_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>2.神经过敏，心中不踏实</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_2" value="1" id="rdoSCL90_2_1"><label for="rdoSCL90_2_1">从无、</label>
+		<input type="radio" name="rdoSCL90_2" value="2" id="rdoSCL90_2_2"><label for="rdoSCL90_2_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_2" value="3" id="rdoSCL90_2_3"><label for="rdoSCL90_2_3">中等、</label>
+		<input type="radio" name="rdoSCL90_2" value="4" id="rdoSCL90_2_4"><label for="rdoSCL90_2_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_2" value="5" id="rdoSCL90_2_5"><label for="rdoSCL90_2_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>3.头脑中有不必要的想法或字句盘旋</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_3" value="1" id="rdoSCL90_3_1"><label for="rdoSCL90_3_1">从无、</label>
+		<input type="radio" name="rdoSCL90_3" value="2" id="rdoSCL90_3_2"><label for="rdoSCL90_3_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_3" value="3" id="rdoSCL90_3_3"><label for="rdoSCL90_3_3">中等、</label>
+		<input type="radio" name="rdoSCL90_3" value="4" id="rdoSCL90_3_4"><label for="rdoSCL90_3_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_3" value="5" id="rdoSCL90_3_5"><label for="rdoSCL90_3_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>4.头晕或晕倒</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_4" value="1" id="rdoSCL90_4_1"><label for="rdoSCL90_4_1">从无、</label>
+		<input type="radio" name="rdoSCL90_4" value="2" id="rdoSCL90_4_2"><label for="rdoSCL90_4_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_4" value="3" id="rdoSCL90_4_3"><label for="rdoSCL90_4_3">中等、</label>
+		<input type="radio" name="rdoSCL90_4" value="4" id="rdoSCL90_4_4"><label for="rdoSCL90_4_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_4" value="5" id="rdoSCL90_4_5"><label for="rdoSCL90_4_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>5.对异性的兴趣减退</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_5" value="1" id="rdoSCL90_5_1"><label for="rdoSCL90_5_1">从无、</label>
+		<input type="radio" name="rdoSCL90_5" value="2" id="rdoSCL90_5_2"><label for="rdoSCL90_5_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_5" value="3" id="rdoSCL90_5_3"><label for="rdoSCL90_5_3">中等、</label>
+		<input type="radio" name="rdoSCL90_5" value="4" id="rdoSCL90_5_4"><label for="rdoSCL90_5_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_5" value="5" id="rdoSCL90_5_5"><label for="rdoSCL90_5_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>6.对旁人责备求全</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_6" value="1" id="rdoSCL90_6_1"><label for="rdoSCL90_6_1">从无、</label>
+		<input type="radio" name="rdoSCL90_6" value="2" id="rdoSCL90_6_2"><label for="rdoSCL90_6_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_6" value="3" id="rdoSCL90_6_3"><label for="rdoSCL90_6_3">中等、</label>
+		<input type="radio" name="rdoSCL90_6" value="4" id="rdoSCL90_6_4"><label for="rdoSCL90_6_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_6" value="5" id="rdoSCL90_6_5"><label for="rdoSCL90_6_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>7.感到别人能控制您的思想</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_7" value="1" id="rdoSCL90_7_1"><label for="rdoSCL90_7_1">从无、</label>
+		<input type="radio" name="rdoSCL90_7" value="2" id="rdoSCL90_7_2"><label for="rdoSCL90_7_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_7" value="3" id="rdoSCL90_7_3"><label for="rdoSCL90_7_3">中等、</label>
+		<input type="radio" name="rdoSCL90_7" value="4" id="rdoSCL90_7_4"><label for="rdoSCL90_7_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_7" value="5" id="rdoSCL90_7_5"><label for="rdoSCL90_7_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>8.责怪别人制造麻烦</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_8" value="1" id="rdoSCL90_8_1"><label for="rdoSCL90_8_1">从无、</label>
+		<input type="radio" name="rdoSCL90_8" value="2" id="rdoSCL90_8_2"><label for="rdoSCL90_8_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_8" value="3" id="rdoSCL90_8_3"><label for="rdoSCL90_8_3">中等、</label>
+		<input type="radio" name="rdoSCL90_8" value="4" id="rdoSCL90_8_4"><label for="rdoSCL90_8_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_8" value="5" id="rdoSCL90_8_5"><label for="rdoSCL90_8_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>9.忘性大</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_9" value="1" id="rdoSCL90_9_1"><label for="rdoSCL90_9_1">从无、</label>
+		<input type="radio" name="rdoSCL90_9" value="2" id="rdoSCL90_9_2"><label for="rdoSCL90_9_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_9" value="3" id="rdoSCL90_9_3"><label for="rdoSCL90_9_3">中等、</label>
+		<input type="radio" name="rdoSCL90_9" value="4" id="rdoSCL90_9_4"><label for="rdoSCL90_9_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_9" value="5" id="rdoSCL90_9_5"><label for="rdoSCL90_9_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>10.担心自己的衣饰整齐及仪态的端正</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_10" value="1" id="rdoSCL90_10_1"><label for="rdoSCL90_10_1">从无、</label>
+		<input type="radio" name="rdoSCL90_10" value="2" id="rdoSCL90_10_2"><label for="rdoSCL90_10_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_10" value="3" id="rdoSCL90_10_3"><label for="rdoSCL90_10_3">中等、</label>
+		<input type="radio" name="rdoSCL90_10" value="4" id="rdoSCL90_10_4"><label for="rdoSCL90_10_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_10" value="5" id="rdoSCL90_10_5"><label for="rdoSCL90_10_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>11.容易烦恼和激动</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_11" value="1" id="rdoSCL90_11_1"><label for="rdoSCL90_11_1">从无、</label>
+		<input type="radio" name="rdoSCL90_11" value="2" id="rdoSCL90_11_2"><label for="rdoSCL90_11_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_11" value="3" id="rdoSCL90_11_3"><label for="rdoSCL90_11_3">中等、</label>
+		<input type="radio" name="rdoSCL90_11" value="4" id="rdoSCL90_11_4"><label for="rdoSCL90_11_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_11" value="5" id="rdoSCL90_11_5"><label for="rdoSCL90_11_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>12.胸痛</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_12" value="1" id="rdoSCL90_12_1"><label for="rdoSCL90_12_1">从无、</label>
+		<input type="radio" name="rdoSCL90_12" value="2" id="rdoSCL90_12_2"><label for="rdoSCL90_12_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_12" value="3" id="rdoSCL90_12_3"><label for="rdoSCL90_12_3">中等、</label>
+		<input type="radio" name="rdoSCL90_12" value="4" id="rdoSCL90_12_4"><label for="rdoSCL90_12_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_12" value="5" id="rdoSCL90_12_5"><label for="rdoSCL90_12_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>13.害怕空旷的场所或街道</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_13" value="1" id="rdoSCL90_13_1"><label for="rdoSCL90_13_1">从无、</label>
+		<input type="radio" name="rdoSCL90_13" value="2" id="rdoSCL90_13_2"><label for="rdoSCL90_13_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_13" value="3" id="rdoSCL90_13_3"><label for="rdoSCL90_13_3">中等、</label>
+		<input type="radio" name="rdoSCL90_13" value="4" id="rdoSCL90_13_4"><label for="rdoSCL90_13_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_13" value="5" id="rdoSCL90_13_5"><label for="rdoSCL90_13_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>14.感到自己的精力下降，活动减慢</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_14" value="1" id="rdoSCL90_14_1"><label for="rdoSCL90_14_1">从无、</label>
+		<input type="radio" name="rdoSCL90_14" value="2" id="rdoSCL90_14_2"><label for="rdoSCL90_14_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_14" value="3" id="rdoSCL90_14_3"><label for="rdoSCL90_14_3">中等、</label>
+		<input type="radio" name="rdoSCL90_14" value="4" id="rdoSCL90_14_4"><label for="rdoSCL90_14_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_14" value="5" id="rdoSCL90_14_5"><label for="rdoSCL90_14_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>15.想结束自己的生命</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_15" value="1" id="rdoSCL90_15_1"><label for="rdoSCL90_15_1">从无、</label>
+		<input type="radio" name="rdoSCL90_15" value="2" id="rdoSCL90_15_2"><label for="rdoSCL90_15_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_15" value="3" id="rdoSCL90_15_3"><label for="rdoSCL90_15_3">中等、</label>
+		<input type="radio" name="rdoSCL90_15" value="4" id="rdoSCL90_15_4"><label for="rdoSCL90_15_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_15" value="5" id="rdoSCL90_15_5"><label for="rdoSCL90_15_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>16.听到旁人听不到的声音</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_16" value="1" id="rdoSCL90_16_1"><label for="rdoSCL90_16_1">从无、</label>
+		<input type="radio" name="rdoSCL90_16" value="2" id="rdoSCL90_16_2"><label for="rdoSCL90_16_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_16" value="3" id="rdoSCL90_16_3"><label for="rdoSCL90_16_3">中等、</label>
+		<input type="radio" name="rdoSCL90_16" value="4" id="rdoSCL90_16_4"><label for="rdoSCL90_16_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_16" value="5" id="rdoSCL90_16_5"><label for="rdoSCL90_16_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>17.发抖</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_17" value="1" id="rdoSCL90_17_1"><label for="rdoSCL90_17_1">从无、</label>
+		<input type="radio" name="rdoSCL90_17" value="2" id="rdoSCL90_17_2"><label for="rdoSCL90_17_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_17" value="3" id="rdoSCL90_17_3"><label for="rdoSCL90_17_3">中等、</label>
+		<input type="radio" name="rdoSCL90_17" value="4" id="rdoSCL90_17_4"><label for="rdoSCL90_17_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_17" value="5" id="rdoSCL90_17_5"><label for="rdoSCL90_17_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>18.感到大多数人都不可信任</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_18" value="1" id="rdoSCL90_18_1"><label for="rdoSCL90_18_1">从无、</label>
+		<input type="radio" name="rdoSCL90_18" value="2" id="rdoSCL90_18_2"><label for="rdoSCL90_18_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_18" value="3" id="rdoSCL90_18_3"><label for="rdoSCL90_18_3">中等、</label>
+		<input type="radio" name="rdoSCL90_18" value="4" id="rdoSCL90_18_4"><label for="rdoSCL90_18_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_18" value="5" id="rdoSCL90_18_5"><label for="rdoSCL90_18_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>19.胃口不好</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_19" value="1" id="rdoSCL90_19_1"><label for="rdoSCL90_19_1">从无、</label>
+		<input type="radio" name="rdoSCL90_19" value="2" id="rdoSCL90_19_2"><label for="rdoSCL90_19_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_19" value="3" id="rdoSCL90_19_3"><label for="rdoSCL90_19_3">中等、</label>
+		<input type="radio" name="rdoSCL90_19" value="4" id="rdoSCL90_19_4"><label for="rdoSCL90_19_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_19" value="5" id="rdoSCL90_19_5"><label for="rdoSCL90_19_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>20.容易哭泣</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_20" value="1" id="rdoSCL90_20_1"><label for="rdoSCL90_20_1">从无、</label>
+		<input type="radio" name="rdoSCL90_20" value="2" id="rdoSCL90_20_2"><label for="rdoSCL90_20_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_20" value="3" id="rdoSCL90_20_3"><label for="rdoSCL90_20_3">中等、</label>
+		<input type="radio" name="rdoSCL90_20" value="4" id="rdoSCL90_20_4"><label for="rdoSCL90_20_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_20" value="5" id="rdoSCL90_20_5"><label for="rdoSCL90_20_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>21.同异性相处时感到害羞不自在</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_21" value="1" id="rdoSCL90_21_1"><label for="rdoSCL90_21_1">从无、</label>
+		<input type="radio" name="rdoSCL90_21" value="2" id="rdoSCL90_21_2"><label for="rdoSCL90_21_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_21" value="3" id="rdoSCL90_21_3"><label for="rdoSCL90_21_3">中等、</label>
+		<input type="radio" name="rdoSCL90_21" value="4" id="rdoSCL90_21_4"><label for="rdoSCL90_21_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_21" value="5" id="rdoSCL90_21_5"><label for="rdoSCL90_21_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>22.感到受骗，中了圈套或有人想抓住您</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_22" value="1" id="rdoSCL90_22_1"><label for="rdoSCL90_22_1">从无、</label>
+		<input type="radio" name="rdoSCL90_22" value="2" id="rdoSCL90_22_2"><label for="rdoSCL90_22_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_22" value="3" id="rdoSCL90_22_3"><label for="rdoSCL90_22_3">中等、</label>
+		<input type="radio" name="rdoSCL90_22" value="4" id="rdoSCL90_22_4"><label for="rdoSCL90_22_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_22" value="5" id="rdoSCL90_22_5"><label for="rdoSCL90_22_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>23.无缘无故地突然感到害怕</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_23" value="1" id="rdoSCL90_23_1"><label for="rdoSCL90_23_1">从无、</label>
+		<input type="radio" name="rdoSCL90_23" value="2" id="rdoSCL90_23_2"><label for="rdoSCL90_23_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_23" value="3" id="rdoSCL90_23_3"><label for="rdoSCL90_23_3">中等、</label>
+		<input type="radio" name="rdoSCL90_23" value="4" id="rdoSCL90_23_4"><label for="rdoSCL90_23_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_23" value="5" id="rdoSCL90_23_5"><label for="rdoSCL90_23_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>24.自己不能控制地大发脾气</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_24" value="1" id="rdoSCL90_24_1"><label for="rdoSCL90_24_1">从无、</label>
+		<input type="radio" name="rdoSCL90_24" value="2" id="rdoSCL90_24_2"><label for="rdoSCL90_24_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_24" value="3" id="rdoSCL90_24_3"><label for="rdoSCL90_24_3">中等、</label>
+		<input type="radio" name="rdoSCL90_24" value="4" id="rdoSCL90_24_4"><label for="rdoSCL90_24_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_24" value="5" id="rdoSCL90_24_5"><label for="rdoSCL90_24_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>25.怕单独出门</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_25" value="1" id="rdoSCL90_25_1"><label for="rdoSCL90_25_1">从无、</label>
+		<input type="radio" name="rdoSCL90_25" value="2" id="rdoSCL90_25_2"><label for="rdoSCL90_25_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_25" value="3" id="rdoSCL90_25_3"><label for="rdoSCL90_25_3">中等、</label>
+		<input type="radio" name="rdoSCL90_25" value="4" id="rdoSCL90_25_4"><label for="rdoSCL90_25_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_25" value="5" id="rdoSCL90_25_5"><label for="rdoSCL90_25_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>26.经常责怪自己</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_26" value="1" id="rdoSCL90_26_1"><label for="rdoSCL90_26_1">从无、</label>
+		<input type="radio" name="rdoSCL90_26" value="2" id="rdoSCL90_26_2"><label for="rdoSCL90_26_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_26" value="3" id="rdoSCL90_26_3"><label for="rdoSCL90_26_3">中等、</label>
+		<input type="radio" name="rdoSCL90_26" value="4" id="rdoSCL90_26_4"><label for="rdoSCL90_26_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_26" value="5" id="rdoSCL90_26_5"><label for="rdoSCL90_26_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>27.腰痛</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_27" value="1" id="rdoSCL90_27_1"><label for="rdoSCL90_27_1">从无、</label>
+		<input type="radio" name="rdoSCL90_27" value="2" id="rdoSCL90_27_2"><label for="rdoSCL90_27_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_27" value="3" id="rdoSCL90_27_3"><label for="rdoSCL90_27_3">中等、</label>
+		<input type="radio" name="rdoSCL90_27" value="4" id="rdoSCL90_27_4"><label for="rdoSCL90_27_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_27" value="5" id="rdoSCL90_27_5"><label for="rdoSCL90_27_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>28.感到难以完成任务</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_28" value="1" id="rdoSCL90_28_1"><label for="rdoSCL90_28_1">从无、</label>
+		<input type="radio" name="rdoSCL90_28" value="2" id="rdoSCL90_28_2"><label for="rdoSCL90_28_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_28" value="3" id="rdoSCL90_28_3"><label for="rdoSCL90_28_3">中等、</label>
+		<input type="radio" name="rdoSCL90_28" value="4" id="rdoSCL90_28_4"><label for="rdoSCL90_28_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_28" value="5" id="rdoSCL90_28_5"><label for="rdoSCL90_28_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>29.感到孤独</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_29" value="1" id="rdoSCL90_29_1"><label for="rdoSCL90_29_1">从无、</label>
+		<input type="radio" name="rdoSCL90_29" value="2" id="rdoSCL90_29_2"><label for="rdoSCL90_29_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_29" value="3" id="rdoSCL90_29_3"><label for="rdoSCL90_29_3">中等、</label>
+		<input type="radio" name="rdoSCL90_29" value="4" id="rdoSCL90_29_4"><label for="rdoSCL90_29_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_29" value="5" id="rdoSCL90_29_5"><label for="rdoSCL90_29_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>30.感到苦闷</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_30" value="1" id="rdoSCL90_30_1"><label for="rdoSCL90_30_1">从无、</label>
+		<input type="radio" name="rdoSCL90_30" value="2" id="rdoSCL90_30_2"><label for="rdoSCL90_30_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_30" value="3" id="rdoSCL90_30_3"><label for="rdoSCL90_30_3">中等、</label>
+		<input type="radio" name="rdoSCL90_30" value="4" id="rdoSCL90_30_4"><label for="rdoSCL90_30_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_30" value="5" id="rdoSCL90_30_5"><label for="rdoSCL90_30_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>31.过分担忧</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_31" value="1" id="rdoSCL90_31_1"><label for="rdoSCL90_31_1">从无、</label>
+		<input type="radio" name="rdoSCL90_31" value="2" id="rdoSCL90_31_2"><label for="rdoSCL90_31_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_31" value="3" id="rdoSCL90_31_3"><label for="rdoSCL90_31_3">中等、</label>
+		<input type="radio" name="rdoSCL90_31" value="4" id="rdoSCL90_31_4"><label for="rdoSCL90_31_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_31" value="5" id="rdoSCL90_31_5"><label for="rdoSCL90_31_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>32.对事物不感兴趣</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_32" value="1" id="rdoSCL90_32_1"><label for="rdoSCL90_32_1">从无、</label>
+		<input type="radio" name="rdoSCL90_32" value="2" id="rdoSCL90_32_2"><label for="rdoSCL90_32_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_32" value="3" id="rdoSCL90_32_3"><label for="rdoSCL90_32_3">中等、</label>
+		<input type="radio" name="rdoSCL90_32" value="4" id="rdoSCL90_32_4"><label for="rdoSCL90_32_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_32" value="5" id="rdoSCL90_32_5"><label for="rdoSCL90_32_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>33.感到害怕</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_33" value="1" id="rdoSCL90_33_1"><label for="rdoSCL90_33_1">从无、</label>
+		<input type="radio" name="rdoSCL90_33" value="2" id="rdoSCL90_33_2"><label for="rdoSCL90_33_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_33" value="3" id="rdoSCL90_33_3"><label for="rdoSCL90_33_3">中等、</label>
+		<input type="radio" name="rdoSCL90_33" value="4" id="rdoSCL90_33_4"><label for="rdoSCL90_33_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_33" value="5" id="rdoSCL90_33_5"><label for="rdoSCL90_33_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>34.您的感情容易受到伤害</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_34" value="1" id="rdoSCL90_34_1"><label for="rdoSCL90_34_1">从无、</label>
+		<input type="radio" name="rdoSCL90_34" value="2" id="rdoSCL90_34_2"><label for="rdoSCL90_34_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_34" value="3" id="rdoSCL90_34_3"><label for="rdoSCL90_34_3">中等、</label>
+		<input type="radio" name="rdoSCL90_34" value="4" id="rdoSCL90_34_4"><label for="rdoSCL90_34_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_34" value="5" id="rdoSCL90_34_5"><label for="rdoSCL90_34_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>35.旁人能知道您的私下想法</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_35" value="1" id="rdoSCL90_35_1"><label for="rdoSCL90_35_1">从无、</label>
+		<input type="radio" name="rdoSCL90_35" value="2" id="rdoSCL90_35_2"><label for="rdoSCL90_35_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_35" value="3" id="rdoSCL90_35_3"><label for="rdoSCL90_35_3">中等、</label>
+		<input type="radio" name="rdoSCL90_35" value="4" id="rdoSCL90_35_4"><label for="rdoSCL90_35_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_35" value="5" id="rdoSCL90_35_5"><label for="rdoSCL90_35_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>36.感到别人不理解您、不同情您</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_36" value="1" id="rdoSCL90_36_1"><label for="rdoSCL90_36_1">从无、</label>
+		<input type="radio" name="rdoSCL90_36" value="2" id="rdoSCL90_36_2"><label for="rdoSCL90_36_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_36" value="3" id="rdoSCL90_36_3"><label for="rdoSCL90_36_3">中等、</label>
+		<input type="radio" name="rdoSCL90_36" value="4" id="rdoSCL90_36_4"><label for="rdoSCL90_36_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_36" value="5" id="rdoSCL90_36_5"><label for="rdoSCL90_36_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>37.感到人们对您不友好，不喜欢您</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_37" value="1" id="rdoSCL90_37_1"><label for="rdoSCL90_37_1">从无、</label>
+		<input type="radio" name="rdoSCL90_37" value="2" id="rdoSCL90_37_2"><label for="rdoSCL90_37_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_37" value="3" id="rdoSCL90_37_3"><label for="rdoSCL90_37_3">中等、</label>
+		<input type="radio" name="rdoSCL90_37" value="4" id="rdoSCL90_37_4"><label for="rdoSCL90_37_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_37" value="5" id="rdoSCL90_37_5"><label for="rdoSCL90_37_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>38.做事必须做得很慢以保证做得正确</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_38" value="1" id="rdoSCL90_38_1"><label for="rdoSCL90_38_1">从无、</label>
+		<input type="radio" name="rdoSCL90_38" value="2" id="rdoSCL90_38_2"><label for="rdoSCL90_38_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_38" value="3" id="rdoSCL90_38_3"><label for="rdoSCL90_38_3">中等、</label>
+		<input type="radio" name="rdoSCL90_38" value="4" id="rdoSCL90_38_4"><label for="rdoSCL90_38_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_38" value="5" id="rdoSCL90_38_5"><label for="rdoSCL90_38_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>39.心跳得很厉害</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_39" value="1" id="rdoSCL90_39_1"><label for="rdoSCL90_39_1">从无、</label>
+		<input type="radio" name="rdoSCL90_39" value="2" id="rdoSCL90_39_2"><label for="rdoSCL90_39_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_39" value="3" id="rdoSCL90_39_3"><label for="rdoSCL90_39_3">中等、</label>
+		<input type="radio" name="rdoSCL90_39" value="4" id="rdoSCL90_39_4"><label for="rdoSCL90_39_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_39" value="5" id="rdoSCL90_39_5"><label for="rdoSCL90_39_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>40.恶心或胃部不舒服</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_40" value="1" id="rdoSCL90_40_1"><label for="rdoSCL90_40_1">从无、</label>
+		<input type="radio" name="rdoSCL90_40" value="2" id="rdoSCL90_40_2"><label for="rdoSCL90_40_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_40" value="3" id="rdoSCL90_40_3"><label for="rdoSCL90_40_3">中等、</label>
+		<input type="radio" name="rdoSCL90_40" value="4" id="rdoSCL90_40_4"><label for="rdoSCL90_40_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_40" value="5" id="rdoSCL90_40_5"><label for="rdoSCL90_40_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>41.感到比不上他人</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_41" value="1" id="rdoSCL90_41_1"><label for="rdoSCL90_41_1">从无、</label>
+		<input type="radio" name="rdoSCL90_41" value="2" id="rdoSCL90_41_2"><label for="rdoSCL90_41_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_41" value="3" id="rdoSCL90_41_3"><label for="rdoSCL90_41_3">中等、</label>
+		<input type="radio" name="rdoSCL90_41" value="4" id="rdoSCL90_41_4"><label for="rdoSCL90_41_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_41" value="5" id="rdoSCL90_41_5"><label for="rdoSCL90_41_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>42.肌肉酸痛</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_42" value="1" id="rdoSCL90_42_1"><label for="rdoSCL90_42_1">从无、</label>
+		<input type="radio" name="rdoSCL90_42" value="2" id="rdoSCL90_42_2"><label for="rdoSCL90_42_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_42" value="3" id="rdoSCL90_42_3"><label for="rdoSCL90_42_3">中等、</label>
+		<input type="radio" name="rdoSCL90_42" value="4" id="rdoSCL90_42_4"><label for="rdoSCL90_42_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_42" value="5" id="rdoSCL90_42_5"><label for="rdoSCL90_42_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>43.感到有人在监视您、谈论您</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_43" value="1" id="rdoSCL90_43_1"><label for="rdoSCL90_43_1">从无、</label>
+		<input type="radio" name="rdoSCL90_43" value="2" id="rdoSCL90_43_2"><label for="rdoSCL90_43_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_43" value="3" id="rdoSCL90_43_3"><label for="rdoSCL90_43_3">中等、</label>
+		<input type="radio" name="rdoSCL90_43" value="4" id="rdoSCL90_43_4"><label for="rdoSCL90_43_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_43" value="5" id="rdoSCL90_43_5"><label for="rdoSCL90_43_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>44.难以入睡</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_44" value="1" id="rdoSCL90_44_1"><label for="rdoSCL90_44_1">从无、</label>
+		<input type="radio" name="rdoSCL90_44" value="2" id="rdoSCL90_44_2"><label for="rdoSCL90_44_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_44" value="3" id="rdoSCL90_44_3"><label for="rdoSCL90_44_3">中等、</label>
+		<input type="radio" name="rdoSCL90_44" value="4" id="rdoSCL90_44_4"><label for="rdoSCL90_44_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_44" value="5" id="rdoSCL90_44_5"><label for="rdoSCL90_44_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>45.做事必须反复检查</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_45" value="1" id="rdoSCL90_45_1"><label for="rdoSCL90_45_1">从无、</label>
+		<input type="radio" name="rdoSCL90_45" value="2" id="rdoSCL90_45_2"><label for="rdoSCL90_45_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_45" value="3" id="rdoSCL90_45_3"><label for="rdoSCL90_45_3">中等、</label>
+		<input type="radio" name="rdoSCL90_45" value="4" id="rdoSCL90_45_4"><label for="rdoSCL90_45_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_45" value="5" id="rdoSCL90_45_5"><label for="rdoSCL90_45_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>46.难以做出决定</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_46" value="1" id="rdoSCL90_46_1"><label for="rdoSCL90_46_1">从无、</label>
+		<input type="radio" name="rdoSCL90_46" value="2" id="rdoSCL90_46_2"><label for="rdoSCL90_46_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_46" value="3" id="rdoSCL90_46_3"><label for="rdoSCL90_46_3">中等、</label>
+		<input type="radio" name="rdoSCL90_46" value="4" id="rdoSCL90_46_4"><label for="rdoSCL90_46_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_46" value="5" id="rdoSCL90_46_5"><label for="rdoSCL90_46_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>47.怕乘电车、公共汽车、地铁或火车</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_47" value="1" id="rdoSCL90_47_1"><label for="rdoSCL90_47_1">从无、</label>
+		<input type="radio" name="rdoSCL90_47" value="2" id="rdoSCL90_47_2"><label for="rdoSCL90_47_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_47" value="3" id="rdoSCL90_47_3"><label for="rdoSCL90_47_3">中等、</label>
+		<input type="radio" name="rdoSCL90_47" value="4" id="rdoSCL90_47_4"><label for="rdoSCL90_47_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_47" value="5" id="rdoSCL90_47_5"><label for="rdoSCL90_47_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>48.呼吸有困难</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_48" value="1" id="rdoSCL90_48_1"><label for="rdoSCL90_48_1">从无、</label>
+		<input type="radio" name="rdoSCL90_48" value="2" id="rdoSCL90_48_2"><label for="rdoSCL90_48_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_48" value="3" id="rdoSCL90_48_3"><label for="rdoSCL90_48_3">中等、</label>
+		<input type="radio" name="rdoSCL90_48" value="4" id="rdoSCL90_48_4"><label for="rdoSCL90_48_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_48" value="5" id="rdoSCL90_48_5"><label for="rdoSCL90_48_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>49.一阵阵发冷或发热</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_49" value="1" id="rdoSCL90_49_1"><label for="rdoSCL90_49_1">从无、</label>
+		<input type="radio" name="rdoSCL90_49" value="2" id="rdoSCL90_49_2"><label for="rdoSCL90_49_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_49" value="3" id="rdoSCL90_49_3"><label for="rdoSCL90_49_3">中等、</label>
+		<input type="radio" name="rdoSCL90_49" value="4" id="rdoSCL90_49_4"><label for="rdoSCL90_49_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_49" value="5" id="rdoSCL90_49_5"><label for="rdoSCL90_49_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>50.因为感到害怕而避开某些东西、场合或活动</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_50" value="1" id="rdoSCL90_50_1"><label for="rdoSCL90_50_1">从无、</label>
+		<input type="radio" name="rdoSCL90_50" value="2" id="rdoSCL90_50_2"><label for="rdoSCL90_50_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_50" value="3" id="rdoSCL90_50_3"><label for="rdoSCL90_50_3">中等、</label>
+		<input type="radio" name="rdoSCL90_50" value="4" id="rdoSCL90_50_4"><label for="rdoSCL90_50_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_50" value="5" id="rdoSCL90_50_5"><label for="rdoSCL90_50_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>51.脑子变空了</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_51" value="1" id="rdoSCL90_51_1"><label for="rdoSCL90_51_1">从无、</label>
+		<input type="radio" name="rdoSCL90_51" value="2" id="rdoSCL90_51_2"><label for="rdoSCL90_51_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_51" value="3" id="rdoSCL90_51_3"><label for="rdoSCL90_51_3">中等、</label>
+		<input type="radio" name="rdoSCL90_51" value="4" id="rdoSCL90_51_4"><label for="rdoSCL90_51_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_51" value="5" id="rdoSCL90_51_5"><label for="rdoSCL90_51_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>52.身体发麻或刺痛</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_52" value="1" id="rdoSCL90_52_1"><label for="rdoSCL90_52_1">从无、</label>
+		<input type="radio" name="rdoSCL90_52" value="2" id="rdoSCL90_52_2"><label for="rdoSCL90_52_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_52" value="3" id="rdoSCL90_52_3"><label for="rdoSCL90_52_3">中等、</label>
+		<input type="radio" name="rdoSCL90_52" value="4" id="rdoSCL90_52_4"><label for="rdoSCL90_52_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_52" value="5" id="rdoSCL90_52_5"><label for="rdoSCL90_52_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>53.喉咙有梗塞感</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_53" value="1" id="rdoSCL90_53_1"><label for="rdoSCL90_53_1">从无、</label>
+		<input type="radio" name="rdoSCL90_53" value="2" id="rdoSCL90_53_2"><label for="rdoSCL90_53_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_53" value="3" id="rdoSCL90_53_3"><label for="rdoSCL90_53_3">中等、</label>
+		<input type="radio" name="rdoSCL90_53" value="4" id="rdoSCL90_53_4"><label for="rdoSCL90_53_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_53" value="5" id="rdoSCL90_53_5"><label for="rdoSCL90_53_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>54.感到前途没有希望</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_54" value="1" id="rdoSCL90_54_1"><label for="rdoSCL90_54_1">从无、</label>
+		<input type="radio" name="rdoSCL90_54" value="2" id="rdoSCL90_54_2"><label for="rdoSCL90_54_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_54" value="3" id="rdoSCL90_54_3"><label for="rdoSCL90_54_3">中等、</label>
+		<input type="radio" name="rdoSCL90_54" value="4" id="rdoSCL90_54_4"><label for="rdoSCL90_54_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_54" value="5" id="rdoSCL90_54_5"><label for="rdoSCL90_54_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>55.不能集中注意力</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_55" value="1" id="rdoSCL90_55_1"><label for="rdoSCL90_55_1">从无、</label>
+		<input type="radio" name="rdoSCL90_55" value="2" id="rdoSCL90_55_2"><label for="rdoSCL90_55_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_55" value="3" id="rdoSCL90_55_3"><label for="rdoSCL90_55_3">中等、</label>
+		<input type="radio" name="rdoSCL90_55" value="4" id="rdoSCL90_55_4"><label for="rdoSCL90_55_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_55" value="5" id="rdoSCL90_55_5"><label for="rdoSCL90_55_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>56.感到身体的某一部分软弱无力</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_56" value="1" id="rdoSCL90_56_1"><label for="rdoSCL90_56_1">从无、</label>
+		<input type="radio" name="rdoSCL90_56" value="2" id="rdoSCL90_56_2"><label for="rdoSCL90_56_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_56" value="3" id="rdoSCL90_56_3"><label for="rdoSCL90_56_3">中等、</label>
+		<input type="radio" name="rdoSCL90_56" value="4" id="rdoSCL90_56_4"><label for="rdoSCL90_56_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_56" value="5" id="rdoSCL90_56_5"><label for="rdoSCL90_56_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>57.感到紧张或容易紧张</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_57" value="1" id="rdoSCL90_57_1"><label for="rdoSCL90_57_1">从无、</label>
+		<input type="radio" name="rdoSCL90_57" value="2" id="rdoSCL90_57_2"><label for="rdoSCL90_57_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_57" value="3" id="rdoSCL90_57_3"><label for="rdoSCL90_57_3">中等、</label>
+		<input type="radio" name="rdoSCL90_57" value="4" id="rdoSCL90_57_4"><label for="rdoSCL90_57_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_57" value="5" id="rdoSCL90_57_5"><label for="rdoSCL90_57_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>58.感到手或脚发重</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_58" value="1" id="rdoSCL90_58_1"><label for="rdoSCL90_58_1">从无、</label>
+		<input type="radio" name="rdoSCL90_58" value="2" id="rdoSCL90_58_2"><label for="rdoSCL90_58_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_58" value="3" id="rdoSCL90_58_3"><label for="rdoSCL90_58_3">中等、</label>
+		<input type="radio" name="rdoSCL90_58" value="4" id="rdoSCL90_58_4"><label for="rdoSCL90_58_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_58" value="5" id="rdoSCL90_58_5"><label for="rdoSCL90_58_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>59.想到死亡的事</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_59" value="1" id="rdoSCL90_59_1"><label for="rdoSCL90_59_1">从无、</label>
+		<input type="radio" name="rdoSCL90_59" value="2" id="rdoSCL90_59_2"><label for="rdoSCL90_59_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_59" value="3" id="rdoSCL90_59_3"><label for="rdoSCL90_59_3">中等、</label>
+		<input type="radio" name="rdoSCL90_59" value="4" id="rdoSCL90_59_4"><label for="rdoSCL90_59_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_59" value="5" id="rdoSCL90_59_5"><label for="rdoSCL90_59_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>60.吃得太多</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_60" value="1" id="rdoSCL90_60_1"><label for="rdoSCL90_60_1">从无、</label>
+		<input type="radio" name="rdoSCL90_60" value="2" id="rdoSCL90_60_2"><label for="rdoSCL90_60_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_60" value="3" id="rdoSCL90_60_3"><label for="rdoSCL90_60_3">中等、</label>
+		<input type="radio" name="rdoSCL90_60" value="4" id="rdoSCL90_60_4"><label for="rdoSCL90_60_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_60" value="5" id="rdoSCL90_60_5"><label for="rdoSCL90_60_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>61.当别人看着您或谈论您时感到不自在</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_61" value="1" id="rdoSCL90_61_1"><label for="rdoSCL90_61_1">从无、</label>
+		<input type="radio" name="rdoSCL90_61" value="2" id="rdoSCL90_61_2"><label for="rdoSCL90_61_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_61" value="3" id="rdoSCL90_61_3"><label for="rdoSCL90_61_3">中等、</label>
+		<input type="radio" name="rdoSCL90_61" value="4" id="rdoSCL90_61_4"><label for="rdoSCL90_61_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_61" value="5" id="rdoSCL90_61_5"><label for="rdoSCL90_61_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>62.有一些不属于您自己的想法</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_62" value="1" id="rdoSCL90_62_1"><label for="rdoSCL90_62_1">从无、</label>
+		<input type="radio" name="rdoSCL90_62" value="2" id="rdoSCL90_62_2"><label for="rdoSCL90_62_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_62" value="3" id="rdoSCL90_62_3"><label for="rdoSCL90_62_3">中等、</label>
+		<input type="radio" name="rdoSCL90_62" value="4" id="rdoSCL90_62_4"><label for="rdoSCL90_62_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_62" value="5" id="rdoSCL90_62_5"><label for="rdoSCL90_62_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>63.有想打人或伤害他人的冲动</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_63" value="1" id="rdoSCL90_63_1"><label for="rdoSCL90_63_1">从无、</label>
+		<input type="radio" name="rdoSCL90_63" value="2" id="rdoSCL90_63_2"><label for="rdoSCL90_63_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_63" value="3" id="rdoSCL90_63_3"><label for="rdoSCL90_63_3">中等、</label>
+		<input type="radio" name="rdoSCL90_63" value="4" id="rdoSCL90_63_4"><label for="rdoSCL90_63_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_63" value="5" id="rdoSCL90_63_5"><label for="rdoSCL90_63_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>64.醒得太早</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_64" value="1" id="rdoSCL90_64_1"><label for="rdoSCL90_64_1">从无、</label>
+		<input type="radio" name="rdoSCL90_64" value="2" id="rdoSCL90_64_2"><label for="rdoSCL90_64_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_64" value="3" id="rdoSCL90_64_3"><label for="rdoSCL90_64_3">中等、</label>
+		<input type="radio" name="rdoSCL90_64" value="4" id="rdoSCL90_64_4"><label for="rdoSCL90_64_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_64" value="5" id="rdoSCL90_64_5"><label for="rdoSCL90_64_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>65.必须反复洗手、点数</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_65" value="1" id="rdoSCL90_65_1"><label for="rdoSCL90_65_1">从无、</label>
+		<input type="radio" name="rdoSCL90_65" value="2" id="rdoSCL90_65_2"><label for="rdoSCL90_65_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_65" value="3" id="rdoSCL90_65_3"><label for="rdoSCL90_65_3">中等、</label>
+		<input type="radio" name="rdoSCL90_65" value="4" id="rdoSCL90_65_4"><label for="rdoSCL90_65_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_65" value="5" id="rdoSCL90_65_5"><label for="rdoSCL90_65_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>66.睡得不稳不深</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_66" value="1" id="rdoSCL90_66_1"><label for="rdoSCL90_66_1">从无、</label>
+		<input type="radio" name="rdoSCL90_66" value="2" id="rdoSCL90_66_2"><label for="rdoSCL90_66_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_66" value="3" id="rdoSCL90_66_3"><label for="rdoSCL90_66_3">中等、</label>
+		<input type="radio" name="rdoSCL90_66" value="4" id="rdoSCL90_66_4"><label for="rdoSCL90_66_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_66" value="5" id="rdoSCL90_66_5"><label for="rdoSCL90_66_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>67.有想摔坏或破坏东西的想法</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_67" value="1" id="rdoSCL90_67_1"><label for="rdoSCL90_67_1">从无、</label>
+		<input type="radio" name="rdoSCL90_67" value="2" id="rdoSCL90_67_2"><label for="rdoSCL90_67_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_67" value="3" id="rdoSCL90_67_3"><label for="rdoSCL90_67_3">中等、</label>
+		<input type="radio" name="rdoSCL90_67" value="4" id="rdoSCL90_67_4"><label for="rdoSCL90_67_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_67" value="5" id="rdoSCL90_67_5"><label for="rdoSCL90_67_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>68.有一些别人没有的想法</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_68" value="1" id="rdoSCL90_68_1"><label for="rdoSCL90_68_1">从无、</label>
+		<input type="radio" name="rdoSCL90_68" value="2" id="rdoSCL90_68_2"><label for="rdoSCL90_68_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_68" value="3" id="rdoSCL90_68_3"><label for="rdoSCL90_68_3">中等、</label>
+		<input type="radio" name="rdoSCL90_68" value="4" id="rdoSCL90_68_4"><label for="rdoSCL90_68_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_68" value="5" id="rdoSCL90_68_5"><label for="rdoSCL90_68_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>69.感到对别人神经过敏</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_69" value="1" id="rdoSCL90_69_1"><label for="rdoSCL90_69_1">从无、</label>
+		<input type="radio" name="rdoSCL90_69" value="2" id="rdoSCL90_69_2"><label for="rdoSCL90_69_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_69" value="3" id="rdoSCL90_69_3"><label for="rdoSCL90_69_3">中等、</label>
+		<input type="radio" name="rdoSCL90_69" value="4" id="rdoSCL90_69_4"><label for="rdoSCL90_69_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_69" value="5" id="rdoSCL90_69_5"><label for="rdoSCL90_69_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>70.在商店或电影院等人多的地方感到不自在</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_70" value="1" id="rdoSCL90_70_1"><label for="rdoSCL90_70_1">从无、</label>
+		<input type="radio" name="rdoSCL90_70" value="2" id="rdoSCL90_70_2"><label for="rdoSCL90_70_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_70" value="3" id="rdoSCL90_70_3"><label for="rdoSCL90_70_3">中等、</label>
+		<input type="radio" name="rdoSCL90_70" value="4" id="rdoSCL90_70_4"><label for="rdoSCL90_70_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_70" value="5" id="rdoSCL90_70_5"><label for="rdoSCL90_70_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>71.感到任何事情都很困难</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_71" value="1" id="rdoSCL90_71_1"><label for="rdoSCL90_71_1">从无、</label>
+		<input type="radio" name="rdoSCL90_71" value="2" id="rdoSCL90_71_2"><label for="rdoSCL90_71_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_71" value="3" id="rdoSCL90_71_3"><label for="rdoSCL90_71_3">中等、</label>
+		<input type="radio" name="rdoSCL90_71" value="4" id="rdoSCL90_71_4"><label for="rdoSCL90_71_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_71" value="5" id="rdoSCL90_71_5"><label for="rdoSCL90_71_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>72.一阵阵恐惧或惊恐</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_72" value="1" id="rdoSCL90_72_1"><label for="rdoSCL90_72_1">从无、</label>
+		<input type="radio" name="rdoSCL90_72" value="2" id="rdoSCL90_72_2"><label for="rdoSCL90_72_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_72" value="3" id="rdoSCL90_72_3"><label for="rdoSCL90_72_3">中等、</label>
+		<input type="radio" name="rdoSCL90_72" value="4" id="rdoSCL90_72_4"><label for="rdoSCL90_72_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_72" value="5" id="rdoSCL90_72_5"><label for="rdoSCL90_72_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>73.感到公共场合吃东西很不舒服</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_73" value="1" id="rdoSCL90_73_1"><label for="rdoSCL90_73_1">从无、</label>
+		<input type="radio" name="rdoSCL90_73" value="2" id="rdoSCL90_73_2"><label for="rdoSCL90_73_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_73" value="3" id="rdoSCL90_73_3"><label for="rdoSCL90_73_3">中等、</label>
+		<input type="radio" name="rdoSCL90_73" value="4" id="rdoSCL90_73_4"><label for="rdoSCL90_73_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_73" value="5" id="rdoSCL90_73_5"><label for="rdoSCL90_73_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>74.经常与人争论</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_74" value="1" id="rdoSCL90_74_1"><label for="rdoSCL90_74_1">从无、</label>
+		<input type="radio" name="rdoSCL90_74" value="2" id="rdoSCL90_74_2"><label for="rdoSCL90_74_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_74" value="3" id="rdoSCL90_74_3"><label for="rdoSCL90_74_3">中等、</label>
+		<input type="radio" name="rdoSCL90_74" value="4" id="rdoSCL90_74_4"><label for="rdoSCL90_74_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_74" value="5" id="rdoSCL90_74_5"><label for="rdoSCL90_74_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>75.单独一人时神经很紧张</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_75" value="1" id="rdoSCL90_75_1"><label for="rdoSCL90_75_1">从无、</label>
+		<input type="radio" name="rdoSCL90_75" value="2" id="rdoSCL90_75_2"><label for="rdoSCL90_75_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_75" value="3" id="rdoSCL90_75_3"><label for="rdoSCL90_75_3">中等、</label>
+		<input type="radio" name="rdoSCL90_75" value="4" id="rdoSCL90_75_4"><label for="rdoSCL90_75_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_75" value="5" id="rdoSCL90_75_5"><label for="rdoSCL90_75_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>76.别人对您的成绩没有做出恰当的评价</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_76" value="1" id="rdoSCL90_76_1"><label for="rdoSCL90_76_1">从无、</label>
+		<input type="radio" name="rdoSCL90_76" value="2" id="rdoSCL90_76_2"><label for="rdoSCL90_76_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_76" value="3" id="rdoSCL90_76_3"><label for="rdoSCL90_76_3">中等、</label>
+		<input type="radio" name="rdoSCL90_76" value="4" id="rdoSCL90_76_4"><label for="rdoSCL90_76_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_76" value="5" id="rdoSCL90_76_5"><label for="rdoSCL90_76_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>77.即使和别人在一起也感到孤单</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_77" value="1" id="rdoSCL90_77_1"><label for="rdoSCL90_77_1">从无、</label>
+		<input type="radio" name="rdoSCL90_77" value="2" id="rdoSCL90_77_2"><label for="rdoSCL90_77_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_77" value="3" id="rdoSCL90_77_3"><label for="rdoSCL90_77_3">中等、</label>
+		<input type="radio" name="rdoSCL90_77" value="4" id="rdoSCL90_77_4"><label for="rdoSCL90_77_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_77" value="5" id="rdoSCL90_77_5"><label for="rdoSCL90_77_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>78.感到坐立不安心神不定</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_78" value="1" id="rdoSCL90_78_1"><label for="rdoSCL90_78_1">从无、</label>
+		<input type="radio" name="rdoSCL90_78" value="2" id="rdoSCL90_78_2"><label for="rdoSCL90_78_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_78" value="3" id="rdoSCL90_78_3"><label for="rdoSCL90_78_3">中等、</label>
+		<input type="radio" name="rdoSCL90_78" value="4" id="rdoSCL90_78_4"><label for="rdoSCL90_78_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_78" value="5" id="rdoSCL90_78_5"><label for="rdoSCL90_78_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>79.感到自己没有什么价值</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_79" value="1" id="rdoSCL90_79_1"><label for="rdoSCL90_79_1">从无、</label>
+		<input type="radio" name="rdoSCL90_79" value="2" id="rdoSCL90_79_2"><label for="rdoSCL90_79_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_79" value="3" id="rdoSCL90_79_3"><label for="rdoSCL90_79_3">中等、</label>
+		<input type="radio" name="rdoSCL90_79" value="4" id="rdoSCL90_79_4"><label for="rdoSCL90_79_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_79" value="5" id="rdoSCL90_79_5"><label for="rdoSCL90_79_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>80.感到熟悉的东西变成陌生或不像是真的</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_80" value="1" id="rdoSCL90_80_1"><label for="rdoSCL90_80_1">从无、</label>
+		<input type="radio" name="rdoSCL90_80" value="2" id="rdoSCL90_80_2"><label for="rdoSCL90_80_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_80" value="3" id="rdoSCL90_80_3"><label for="rdoSCL90_80_3">中等、</label>
+		<input type="radio" name="rdoSCL90_80" value="4" id="rdoSCL90_80_4"><label for="rdoSCL90_80_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_80" value="5" id="rdoSCL90_80_5"><label for="rdoSCL90_80_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>81.大叫或摔东西</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_81" value="1" id="rdoSCL90_81_1"><label for="rdoSCL90_81_1">从无、</label>
+		<input type="radio" name="rdoSCL90_81" value="2" id="rdoSCL90_81_2"><label for="rdoSCL90_81_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_81" value="3" id="rdoSCL90_81_3"><label for="rdoSCL90_81_3">中等、</label>
+		<input type="radio" name="rdoSCL90_81" value="4" id="rdoSCL90_81_4"><label for="rdoSCL90_81_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_81" value="5" id="rdoSCL90_81_5"><label for="rdoSCL90_81_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>82.害怕会在公共场合晕倒</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_82" value="1" id="rdoSCL90_82_1"><label for="rdoSCL90_82_1">从无、</label>
+		<input type="radio" name="rdoSCL90_82" value="2" id="rdoSCL90_82_2"><label for="rdoSCL90_82_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_82" value="3" id="rdoSCL90_82_3"><label for="rdoSCL90_82_3">中等、</label>
+		<input type="radio" name="rdoSCL90_82" value="4" id="rdoSCL90_82_4"><label for="rdoSCL90_82_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_82" value="5" id="rdoSCL90_82_5"><label for="rdoSCL90_82_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>83.感到别人想占您的便宜</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_83" value="1" id="rdoSCL90_83_1"><label for="rdoSCL90_83_1">从无、</label>
+		<input type="radio" name="rdoSCL90_83" value="2" id="rdoSCL90_83_2"><label for="rdoSCL90_83_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_83" value="3" id="rdoSCL90_83_3"><label for="rdoSCL90_83_3">中等、</label>
+		<input type="radio" name="rdoSCL90_83" value="4" id="rdoSCL90_83_4"><label for="rdoSCL90_83_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_83" value="5" id="rdoSCL90_83_5"><label for="rdoSCL90_83_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>84.为一些有关性的想法而很苦恼</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_84" value="1" id="rdoSCL90_84_1"><label for="rdoSCL90_84_1">从无、</label>
+		<input type="radio" name="rdoSCL90_84" value="2" id="rdoSCL90_84_2"><label for="rdoSCL90_84_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_84" value="3" id="rdoSCL90_84_3"><label for="rdoSCL90_84_3">中等、</label>
+		<input type="radio" name="rdoSCL90_84" value="4" id="rdoSCL90_84_4"><label for="rdoSCL90_84_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_84" value="5" id="rdoSCL90_84_5"><label for="rdoSCL90_84_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>85.您认为应该因为自己的过错而受到惩罚</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_85" value="1" id="rdoSCL90_85_1"><label for="rdoSCL90_85_1">从无、</label>
+		<input type="radio" name="rdoSCL90_85" value="2" id="rdoSCL90_85_2"><label for="rdoSCL90_85_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_85" value="3" id="rdoSCL90_85_3"><label for="rdoSCL90_85_3">中等、</label>
+		<input type="radio" name="rdoSCL90_85" value="4" id="rdoSCL90_85_4"><label for="rdoSCL90_85_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_85" value="5" id="rdoSCL90_85_5"><label for="rdoSCL90_85_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>86.感到要很快把事情做完</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_86" value="1" id="rdoSCL90_86_1"><label for="rdoSCL90_86_1">从无、</label>
+		<input type="radio" name="rdoSCL90_86" value="2" id="rdoSCL90_86_2"><label for="rdoSCL90_86_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_86" value="3" id="rdoSCL90_86_3"><label for="rdoSCL90_86_3">中等、</label>
+		<input type="radio" name="rdoSCL90_86" value="4" id="rdoSCL90_86_4"><label for="rdoSCL90_86_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_86" value="5" id="rdoSCL90_86_5"><label for="rdoSCL90_86_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>87.感到自己的身体有严重问题</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_87" value="1" id="rdoSCL90_87_1"><label for="rdoSCL90_87_1">从无、</label>
+		<input type="radio" name="rdoSCL90_87" value="2" id="rdoSCL90_87_2"><label for="rdoSCL90_87_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_87" value="3" id="rdoSCL90_87_3"><label for="rdoSCL90_87_3">中等、</label>
+		<input type="radio" name="rdoSCL90_87" value="4" id="rdoSCL90_87_4"><label for="rdoSCL90_87_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_87" value="5" id="rdoSCL90_87_5"><label for="rdoSCL90_87_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>88.从未感到和其他人很亲近</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_88" value="1" id="rdoSCL90_88_1"><label for="rdoSCL90_88_1">从无、</label>
+		<input type="radio" name="rdoSCL90_88" value="2" id="rdoSCL90_88_2"><label for="rdoSCL90_88_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_88" value="3" id="rdoSCL90_88_3"><label for="rdoSCL90_88_3">中等、</label>
+		<input type="radio" name="rdoSCL90_88" value="4" id="rdoSCL90_88_4"><label for="rdoSCL90_88_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_88" value="5" id="rdoSCL90_88_5"><label for="rdoSCL90_88_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>89.感到自己有罪</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_89" value="1" id="rdoSCL90_89_1"><label for="rdoSCL90_89_1">从无、</label>
+		<input type="radio" name="rdoSCL90_89" value="2" id="rdoSCL90_89_2"><label for="rdoSCL90_89_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_89" value="3" id="rdoSCL90_89_3"><label for="rdoSCL90_89_3">中等、</label>
+		<input type="radio" name="rdoSCL90_89" value="4" id="rdoSCL90_89_4"><label for="rdoSCL90_89_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_89" value="5" id="rdoSCL90_89_5"><label for="rdoSCL90_89_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div>90.感到自己的脑子有毛病</divn>
+	<div>
+		<input type="radio" name="rdoSCL90_90" value="1" id="rdoSCL90_90_1"><label for="rdoSCL90_90_1">从无、</label>
+		<input type="radio" name="rdoSCL90_90" value="2" id="rdoSCL90_90_2"><label for="rdoSCL90_90_2">很轻、</label>
+		<input type="radio" name="rdoSCL90_90" value="3" id="rdoSCL90_90_3"><label for="rdoSCL90_90_3">中等、</label>
+		<input type="radio" name="rdoSCL90_90" value="4" id="rdoSCL90_90_4"><label for="rdoSCL90_90_4">偏重、</label>
+		<input type="radio" name="rdoSCL90_90" value="5" id="rdoSCL90_90_5"><label for="rdoSCL90_90_5">严重</label>
+	</div>
+
+
+	<hr>
+	<div style="text-align:center;"><input type="button" value="提交" onclick="javascript:pageSubmit();"></div>
+	</form>
+	</div>
+</div>
+ <SCRIPT TYPE="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-1161804-6']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </SCRIPT>
+</body>
+</html>

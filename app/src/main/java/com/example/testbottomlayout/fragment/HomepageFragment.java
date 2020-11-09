@@ -8,10 +8,10 @@ import android.widget.Button;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.testbottomlayout.Activity.MainActivity;
 import com.example.testbottomlayout.Activity.P2PActivity;
+import com.example.testbottomlayout.Activity.SCLActivity;
 import com.example.testbottomlayout.R;
-import com.example.testbottomlayout.recycleView.RecyclerViewAdapter;
+import com.example.testbottomlayout.recycleView.Homepage_RecyclerViewAdapter;
 import com.example.testbottomlayout.base.BaseFragment;
 
 import java.util.ArrayList;
@@ -41,13 +41,13 @@ public class HomepageFragment extends BaseFragment {
         LinearLayoutManager linearLayout = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(linearLayout);
         //设置适配器
-        RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(getActivity(), list);
+        Homepage_RecyclerViewAdapter recyclerViewAdapter = new Homepage_RecyclerViewAdapter(getActivity(), list);
         recyclerView.setAdapter(recyclerViewAdapter);
 
         firstfun_button = view.findViewById(R.id.first_fun);
         firstfun_button.setOnClickListener(v -> {
             Log.e("button","被点击了");
-            Intent intent = new Intent(getActivity(), P2PActivity.class);
+            Intent intent = new Intent(getActivity(), SCLActivity.class);
             startActivity(intent);
         });
 

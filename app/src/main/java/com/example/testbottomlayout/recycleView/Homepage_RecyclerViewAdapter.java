@@ -18,19 +18,19 @@ import java.util.List;
  * @date: 2020/10/24
  * @describe:RecycleView的适配器
  */
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
+public class Homepage_RecyclerViewAdapter extends RecyclerView.Adapter<Homepage_RecyclerViewAdapter.MyViewHolder> {
     private Context context;
     private List<Integer> list;
 
     //构造方法
-    public RecyclerViewAdapter(Context context, List<Integer> list){
+    public Homepage_RecyclerViewAdapter(Context context, List<Integer> list){
         this.context = context;
         this.list = list;
     }
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.recycleview_item,parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.homepassage_recycleview_item,parent,false);
         MyViewHolder myViewHolder = new MyViewHolder(view);
         return myViewHolder;
     }
